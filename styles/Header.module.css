@@ -1,0 +1,87 @@
+.header {
+  width: 1500px;
+  max-width: 80vw;
+  margin: 50px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.header h2 {
+  color: black;
+  position: relative;
+}
+.header h2::before {
+  content: "<";
+  transition: all 0.3s ease;
+}
+.header h2::after {
+  content: ">";
+  transition: all 0.3s ease;
+}
+.header h2:hover::before {
+  padding-right: 10px;
+}
+.header h2:hover::after {
+  padding-left: 10px;
+  content: "/>";
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  .navigation {
+    margin-top: 25px;
+  }
+}
+
+.navigation a {
+  padding: 10px;
+  margin: 0 5px;
+  font-weight: bold;
+  color: #666;
+  position: relative;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  height: 4px;
+  transition: all 0.3s ease;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgb(249, 214, 73),
+    rgb(240, 142, 53),
+    rgb(236, 81, 87),
+    rgb(255, 24, 189)
+  );
+}
+
+.navigation a:hover {
+  color: #000;
+}
+
+.navigation a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .navigation a:hover::after {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+.outer {
+  width: 100%;
+  background: rgb(240, 142, 53);
+
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 700px;
+  max-width: 80vw;
+  color: white;
+  text-align: center;
+}
+
+.inner h1 {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 3em;
+}
+
+.inner p {
+  text-align: justify;
+  margin: 50px 0;
+  font-size: 1.2em;
+  text-indent: 2em;
+  line-height: 1.4em;
+}
+
+.inner a {
+  position: relative;
+}
+.inner a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.inner a:hover::after {
+  width: 100%;
+}
+
+.title {
+  display: inline;
+  padding: 12px 15px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 !important;
+}
+
+.title:hover {
+  letter-spacing: 2px;
+  background-color: #fff;
+  color: rgb(240, 142, 53);
+  border-radius: 10px 2px 10px 2px !important;
+}
+
+.inner p {
+  color: rgba(255, 255, 255, 0.75);
+}
+.inner a,
+.inner b,
+.inner i {
+  color: rgba(255, 255, 255, 1);
+}
