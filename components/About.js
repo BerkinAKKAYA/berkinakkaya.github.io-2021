@@ -12,13 +12,13 @@ export default function Home() {
           . I started coding with the dream of creating a <b>website</b> about
           cars out of my car magazines. After i learnt some HTML and CSS, i
           decided that i want to develop <b>web based games</b> and started
-          learning C# with&nbsp;
+          learning C# with{" "}
           <a href="https://unity.com" target="_blank" rel="noreferrer">
             Unity
           </a>
           . Meanwhile i met open source software, started using{" "}
           <b>Arch Linux</b> and saw that i enjoy contributing to the software i
-          use so much. I'm currently working as a front-end developer and
+          use so much. I&apos;m currently working as a front-end developer and
           learning Rust in my free time.
         </p>
       </div>
