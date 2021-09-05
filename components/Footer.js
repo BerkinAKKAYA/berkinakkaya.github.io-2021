@@ -1,5 +1,4 @@
 import styles from "../styles/Footer.module.css";
-import Image from "next/image";
 
 import githubIcon from "../public/github.svg";
 import mediumIcon from "../public/medium.svg";
@@ -16,7 +15,7 @@ export default function Footer() {
           rel="noreferrer"
           className={styles.orange}
         >
-          <Image src={githubIcon} alt="GitHub" />
+          <img src={githubIcon} alt="GitHub" />
           <span>GitHub</span>
         </a>
         <a
@@ -25,7 +24,7 @@ export default function Footer() {
           rel="noreferrer"
           className={styles.red}
         >
-          <Image src={mediumIcon} alt="Medium" />
+          <img src={mediumIcon} alt="Medium" />
           <span>Medium</span>
         </a>
         <a
@@ -34,7 +33,7 @@ export default function Footer() {
           rel="noreferrer"
           className={styles.purple}
         >
-          <Image src={playStoreIcon} alt="Play Store" />
+          <img src={playStoreIcon} alt="Play Store" />
           <span>Play Store</span>
         </a>
         <a
@@ -43,7 +42,7 @@ export default function Footer() {
           rel="noreferrer"
           className={styles.blue}
         >
-          <Image src={linkedInIcon} alt="LinkedIn" />
+          <img src={linkedInIcon} alt="LinkedIn" />
           <span>LinkedIn</span>
         </a>
       </footer>
