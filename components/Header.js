@@ -6,7 +6,11 @@ export default function Header() {
     <header className={styles.header}>
       <Link href="/">
         <a>
-          <h2>Berkin AKKAYA</h2>
+          <h2>
+            <span className={styles.lt}>&lt;</span>
+            Berkin AKKAYA
+            <span className={styles.gt}>&gt;</span>
+          </h2>
         </a>
       </Link>
 
