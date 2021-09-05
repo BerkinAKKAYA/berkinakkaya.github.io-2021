@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>Berkin AKKAYA</title>
         <meta name="description" content="Digital Portfolio of Berkin AKKAYA" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/github.svg" />
 
         <link
           rel="stylesheet"
