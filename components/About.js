@@ -1,6 +1,6 @@
 import styles from "../styles/About.module.css";
 
-export default function Home() {
+export default function About() {
   return (
     <section className={styles.outer}>
       <div className={styles.inner}>

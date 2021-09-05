@@ -11,6 +11,7 @@
   max-width: 80vw;
   color: white;
   text-align: center;
+  padding: 30px 0 !important;
 }
 
 .inner h1 {

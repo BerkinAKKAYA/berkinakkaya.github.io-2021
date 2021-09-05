@@ -1,0 +1,51 @@
+.footer {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+  gap: 8px;
+  border: 2px dashed white;
+}
+.footer a span {
+  display: inline-block;
+  padding-top: 2px;
+}
+.footer a img {
+  width: 16px;
+}
+
+.orange {
+  color: rgb(238, 153, 51);
+}
+.red {
+  color: rgb(238, 85, 85);
+}
+.purple {
+  color: rgb(119, 51, 238);
+}
+.blue {
+  color: rgb(26, 75, 255);
+}
+
+.footer a:hover {
+  transform: scale(1.2);
+  border-radius: 10px;
+}
+.footer a.orange:hover {
+  border-color: rgb(238, 153, 51);
+}
+.footer a.red:hover {
+  border-color: rgb(238, 85, 85);
+}
+.footer a.purple:hover {
+  border-color: rgb(119, 51, 238);
+}
+.footer a.blue:hover {
+  border-color: rgb(26, 75, 255);
+}
