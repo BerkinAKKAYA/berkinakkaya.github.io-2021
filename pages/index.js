@@ -27,7 +27,12 @@ export default function Home() {
         </Link>
       </main>
 
-      <svg width="3000" height="200" viewBox="0 0 3000 200">
+      <svg
+        width="3000"
+        height="300"
+        viewBox="0 0 3000 300"
+        className={styles.wave}
+      >
         <g transform="translate(1500,100) scale(1,-2) translate(-1500,-100)">
           <path d="" fill="rgb(240, 142, 53)">
             <animate
