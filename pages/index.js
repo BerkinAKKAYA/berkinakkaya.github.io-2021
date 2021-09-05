@@ -11,6 +11,13 @@ export default function Home() {
         <title>Berkin AKKAYA</title>
         <meta name="description" content="Digital Portfolio of Berkin AKKAYA" />
         <link rel="icon" href="/favicon.ico" />
+
+        <link
+          rel="stylesheet"
+          media="screen"
+          href="https://fontlibrary.org//face/fantasque-sans-mono"
+          type="text/css"
+        />
       </Head>
 
       <Header />
