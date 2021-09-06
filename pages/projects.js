@@ -10,9 +10,11 @@ export default function Projects() {
       </Head>
 
       <div className={styles.container}>
-        <Project title="Project 1" />
-        <Project title="Project 2" right />
-        <Project title="Project 3" />
+        <Project title="Project 1" index="1" />
+        <Project title="Project 2" index="2" right />
+        <Project title="Project 3" index="3" />
+        <Project title="Project 4" index="4" right />
+        <Project title="Project 5" index="5" />
       </div>
     </>
   );

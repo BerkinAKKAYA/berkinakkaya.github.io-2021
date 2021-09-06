@@ -1,10 +1,15 @@
 import styles from "../styles/Project.module.css";
 
-export default function Header({ title, right }) {
+export default function Header({ title, right, index }) {
   return (
     <div
-      className={styles.container}
-      style={{ flexDirection: right ? "row-reverse" : "row" }}
+      className={
+        styles.container +
+        " " +
+        (right ? styles.right : styles.left) +
+        " " +
+        styles["hover" + index]
+      }
     >
       <img src="/project-thumbnails/jumpy.png" alt={title} />
 
@@ -14,11 +19,12 @@ export default function Header({ title, right }) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           feugiat ex nec odio ornare, at tristique tortor suscipit. Suspendisse
           potenti. Cras varius, nunc ullamcorper fermentum imperdiet, dolor
-          augue molestie elit, ac pretium mauris nibh nec neque. Donec porta in
-          libero auctor aliquam. Integer ullamcorper magna eu nulla tempor
-          pretium. Suspendisse ut dapibus sapien. Integer tincidunt maximus
-          mauris nec imperdiet.
+          augue molestie elit, ac pretium mauris nibh nec neque.
         </p>
+
+        <a href="#" className={styles.details}>
+          Click To See More
+        </a>
       </div>
     </div>
   );

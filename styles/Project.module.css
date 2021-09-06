@@ -1,27 +1,104 @@
 .container {
   display: flex;
-  gap: 40px;
+  gap: 20px;
+  cursor: pointer;
 
   border: 2px dashed #ddd;
   padding: 15px;
   margin: 10px 0;
 }
 
+.container.left {
+  margin-right: 50px;
+  border-left: 6px solid black;
+}
+.container.right {
+  flex-direction: row-reverse;
+  margin-left: 50px;
+  border-right: 6px solid black;
+}
+
+.container:hover {
+  border-color: #aaa;
+  margin-inline: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .container img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 100%;
-
-  max-width: 100%;
-  max-height: 100%;
   margin: auto;
   display: block;
+  border: 2px solid #ccc;
+  padding: 5px;
 }
 
 .content h2 {
-  text-indent: 12px;
+  text-align: center;
 }
 .content p {
-  text-indent: 12px;
   text-align: justify;
+  text-align-last: center;
+  padding: 0 10px;
+}
+
+.hover1 {
+  border-left-color: rgb(238, 187, 68) !important;
+}
+.hover2 {
+  border-right-color: rgb(240, 142, 53) !important;
+}
+.hover3 {
+  border-left-color: rgb(236, 81, 87) !important;
+}
+.hover4 {
+  border-right-color: rgb(221, 34, 204) !important;
+}
+.hover5 {
+  border-left-color: rgb(136, 51, 221) !important;
+}
+.hover1 .details,
+.hover1 img {
+  color: rgb(238, 187, 68);
+  border-color: rgb(238, 187, 68);
+}
+.hover2 .details,
+.hover2 img {
+  color: rgb(240, 142, 53);
+  border-color: rgb(240, 142, 53);
+}
+.hover3 .details,
+.hover3 img {
+  color: rgb(236, 81, 87);
+  border-color: rgb(236, 81, 87);
+}
+.hover4 .details,
+.hover4 img {
+  color: rgb(221, 34, 204);
+  border-color: rgb(221, 34, 204);
+}
+.hover5 .details,
+.hover5 img {
+  color: rgb(136, 51, 221);
+  border-color: rgb(136, 51, 221);
+}
+
+.details {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+.container:hover .details {
+  opacity: 1;
+}
+.container:not(:hover) img {
+  border-color: #eee;
 }
