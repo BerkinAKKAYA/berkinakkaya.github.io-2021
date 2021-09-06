@@ -10,13 +10,6 @@ export default function Home() {
         <title>Berkin AKKAYA</title>
         <meta name="description" content="Digital Portfolio of Berkin AKKAYA" />
         <link rel="icon" href="/github.svg" />
-
-        <link
-          rel="stylesheet"
-          media="screen"
-          href="https://fontlibrary.org//face/fantasque-sans-mono"
-          type="text/css"
-        />
       </Head>
 
       <main className={styles.main}>
@@ -42,7 +35,7 @@ export default function Home() {
           <path d="" fill="rgb(240, 142, 53)">
             <animate
               attributeName="d"
-              dur="20"
+              dur="12"
               repeatCount="indefinite"
               keyTimes="0;0.333;0.667;1"
               calcmod="spline"
@@ -54,7 +47,7 @@ export default function Home() {
           <path d="" fill="rgb(240, 142, 53)" opacity="0.5">
             <animate
               attributeName="d"
-              dur="20"
+              dur="12"
               repeatCount="indefinite"
               keyTimes="0;0.333;0.667;1"
               calcmod="spline"
@@ -78,7 +71,7 @@ export default function Home() {
           <path d="" fill="rgb(240, 142, 53)" opacity="0.5">
             <animate
               attributeName="d"
-              dur="10"
+              dur="6"
               repeatCount="indefinite"
               keyTimes="0;0.333;0.667;1"
               calcmod="spline"
@@ -90,7 +83,7 @@ export default function Home() {
           <path d="" fill="rgb(240, 142, 53)">
             <animate
               attributeName="d"
-              dur="10"
+              dur="6"
               repeatCount="indefinite"
               keyTimes="0;0.333;0.667;1"
               calcmod="spline"

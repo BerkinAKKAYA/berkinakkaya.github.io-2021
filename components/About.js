@@ -5,7 +5,14 @@ export default function About() {
     <section className={styles.outer}>
       <div className={styles.inner}>
         <h1 id="about" className={styles.title}>
-          About Me
+          <span className={styles.hover1}>A</span>
+          <span className={styles.hover2}>b</span>
+          <span className={styles.hover3}>o</span>
+          <span className={styles.hover4}>u</span>
+          <span className={styles.hover5}>t</span>
+          &nbsp;
+          <span className={styles.hover6}>M</span>
+          <span className={styles.hover7}>e</span>
         </h1>
         <p>
           I am a 20 years old <b>software developer</b> based on <i>Istanbul</i>
