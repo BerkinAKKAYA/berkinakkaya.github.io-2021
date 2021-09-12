@@ -32,6 +32,7 @@ const routeChange = () => {
 
   const tempFix = () => {
     const allStyleElems = document.querySelectorAll('style[media="x"]');
+    console.log(allStyleElems);
     allStyleElems.forEach((elem) => {
       elem.removeAttribute("media");
     });

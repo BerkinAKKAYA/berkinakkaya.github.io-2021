@@ -4,6 +4,21 @@
   justify-content: space-evenly;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 125px 125px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    left: calc(50% + 10px);
+    transform: translateX(-50%);
+  }
+  .footer a {
+    padding: 10px 5px !important;
+  }
+}
+
 .footer a {
   display: flex;
   align-items: center;

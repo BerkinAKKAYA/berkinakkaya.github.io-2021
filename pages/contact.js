@@ -8,7 +8,16 @@ export default function Contact() {
         <title>Contact - Berkin AKKAYA</title>
       </Head>
 
-      <div className={styles.container}>Contact</div>
+      <div className={styles.container}>
+        <p>
+          <img src="/mail.svg" alt="Mail Icon" />
+          berkin_akkaya@hotmail.com
+        </p>
+        <p>
+          <img src="/phone.svg" alt="Phone Icon" />
+          +90 538 284 8787
+        </p>
+      </div>
     </div>
   );
 }
