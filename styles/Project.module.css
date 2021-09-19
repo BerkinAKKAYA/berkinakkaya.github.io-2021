@@ -81,12 +81,12 @@
 }
 
 .container .actions button {
-  border: none !important;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
   outline: none !important;
   padding: 8px 12px;
   margin-right: 15px;
-  background-color: #ddd;
-  border-radius: 10px;
+  background: none;
   cursor: pointer;
 }
 .container .actions a {
