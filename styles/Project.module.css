@@ -68,6 +68,41 @@
 .hover5:hover {
   border-color: rgb(136, 51, 221) !important;
 }
+.hover1 a:not(.disabled):hover {
+  color: rgb(238, 187, 68) !important;
+}
+.hover2 a:not(.disabled):hover {
+  color: rgb(240, 142, 53) !important;
+}
+.hover3 a:not(.disabled):hover {
+  color: rgb(236, 81, 87) !important;
+}
+.hover4 a:not(.disabled):hover {
+  color: rgb(221, 34, 204) !important;
+}
+.hover5 a:not(.disabled):hover {
+  color: rgb(136, 51, 221) !important;
+}
+.hover1 button:hover {
+  background-color: rgb(238, 187, 68) !important;
+  color: white;
+}
+.hover2 button:hover {
+  background-color: rgb(240, 142, 53) !important;
+  color: white;
+}
+.hover3 button:hover {
+  background-color: rgb(236, 81, 87) !important;
+  color: white;
+}
+.hover4 button:hover {
+  background-color: rgb(221, 34, 204) !important;
+  color: white;
+}
+.hover5 button:hover {
+  background-color: rgb(136, 51, 221) !important;
+  color: white;
+}
 
 .hover1 .details,
 .hover1 img {
@@ -117,13 +152,24 @@
 }
 
 .container .actions button {
-  margin: 0 5px;
-  padding: 6px 12px;
-  border: none;
+  border: none !important;
+  outline: none !important;
+  padding: 8px 12px;
+  margin-right: 15px;
+  background-color: #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .actions a {
+  color: #666;
+}
+.container .actions a.disabled {
+  color: #aaa;
+  text-decoration: line-through;
 }
 
 .container:hover .actions {
-  max-height: 30px;
+  max-height: 35px;
 }
 
 @media (max-width: 600px) {
