@@ -17,7 +17,7 @@ export default function Header({
         <p style={{ marginTop: 15 }}>{description}</p>
         <div className={styles.actions}>
           <a href={liveLink} target="_blank" rel="noreferrer">
-            <button>Live</button>
+            <button>Visit</button>
           </a>
           {githubLink ? (
             <a href={githubLink} target="_blank" rel="noreferrer">
