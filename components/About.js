@@ -28,6 +28,12 @@ export default function About() {
           use so much. I&apos;m currently working as a front-end developer and
           learning Rust in my free time.
         </p>
+        <div className={styles.contact}>
+          <a href="tel:+905382848787">+90 538 284 8787</a>
+          <a href="mailto:berkin_akkaya@hotmail.com">
+            berkin_akkaya@hotmail.com
+          </a>
+        </div>
       </div>
     </section>
   );

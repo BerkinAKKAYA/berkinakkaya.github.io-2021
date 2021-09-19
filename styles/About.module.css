@@ -107,3 +107,29 @@
 .title .hover7 {
   transition-delay: 0.3s;
 }
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 25px;
+  opacity: 0.5;
+  font-size: 1.2em;
+}
+.contact a::after {
+  display: none;
+}
+.contact a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact > * {
+    margin: 10px;
+  }
+}
