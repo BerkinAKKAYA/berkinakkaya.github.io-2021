@@ -8,6 +8,10 @@ export default function Header({ title, description, index, img }) {
       <div className={styles.content}>
         <h2>{title}</h2>
         <p style={{ marginTop: 15 }}>{description}</p>
+        <div className={styles.actions}>
+          <button>Live</button>
+          <button>GitHub</button>
+        </div>
       </div>
     </div>
   );
