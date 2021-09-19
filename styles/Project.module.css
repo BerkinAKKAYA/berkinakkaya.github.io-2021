@@ -2,25 +2,19 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+  align-items: center;
 
   border: 2px dashed #ddd;
   padding: 15px;
   margin: 10px 0;
-}
 
-.container.left {
-  margin-right: 50px;
-  border-left: 6px solid black;
-}
-.container.right {
-  flex-direction: row-reverse;
-  margin-left: 50px;
-  border-right: 6px solid black;
+  border-left: 4px solid black;
 }
 
 .container:hover {
   border-color: #aaa;
   margin-inline: 0 !important;
+  border-right: 2px solid #ccc;
 }
 
 @media (max-width: 600px) {
@@ -30,39 +24,54 @@
 }
 
 .container img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 100%;
-  margin: auto;
+  width: 170px;
+  height: 150px;
+  margin: 15px 10px;
+  margin-left: 20px;
   display: block;
-  border: 2px solid #ccc;
-  padding: 5px;
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
 }
 
-.content h2 {
-  text-align: center;
-}
+.content h2,
 .content p {
+  text-align: left;
   text-align: justify;
-  text-align-last: center;
-  padding: 0 10px;
+  text-indent: 10px;
+  padding-right: 25px;
 }
 
 .hover1 {
   border-left-color: rgb(238, 187, 68) !important;
 }
 .hover2 {
-  border-right-color: rgb(240, 142, 53) !important;
+  border-left-color: rgb(240, 142, 53) !important;
 }
 .hover3 {
   border-left-color: rgb(236, 81, 87) !important;
 }
 .hover4 {
-  border-right-color: rgb(221, 34, 204) !important;
+  border-left-color: rgb(221, 34, 204) !important;
 }
 .hover5 {
   border-left-color: rgb(136, 51, 221) !important;
 }
+.hover1:hover {
+  border-color: rgb(238, 187, 68) !important;
+}
+.hover2:hover {
+  border-color: rgb(240, 142, 53) !important;
+}
+.hover3:hover {
+  border-color: rgb(236, 81, 87) !important;
+}
+.hover4:hover {
+  border-color: rgb(221, 34, 204) !important;
+}
+.hover5:hover {
+  border-color: rgb(136, 51, 221) !important;
+}
+
 .hover1 .details,
 .hover1 img {
   color: rgb(238, 187, 68);
