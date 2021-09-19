@@ -1,3 +1,19 @@
+.hover1 {
+  --primary-color: rgb(238, 187, 68);
+}
+.hover2 {
+  --primary-color: rgb(240, 142, 53);
+}
+.hover3 {
+  --primary-color: rgb(236, 81, 87);
+}
+.hover4 {
+  --primary-color: rgb(221, 34, 204);
+}
+.hover5 {
+  --primary-color: rgb(136, 51, 221);
+}
+
 .container {
   display: flex;
   gap: 20px;
@@ -8,13 +24,12 @@
   padding: 15px;
   margin: 10px 0;
 
-  border-left: 4px solid black;
+  border-left: 4px solid var(--primary-color);
 }
 
 .container:hover {
-  border-color: #aaa;
   margin-inline: 0 !important;
-  border-right: 2px solid #ccc;
+  border-color: var(--primary-color);
 }
 
 .container img {
@@ -38,96 +53,10 @@
   padding-right: 25px;
 }
 
-.hover1 {
-  border-left-color: rgb(238, 187, 68) !important;
-}
-.hover2 {
-  border-left-color: rgb(240, 142, 53) !important;
-}
-.hover3 {
-  border-left-color: rgb(236, 81, 87) !important;
-}
-.hover4 {
-  border-left-color: rgb(221, 34, 204) !important;
-}
-.hover5 {
-  border-left-color: rgb(136, 51, 221) !important;
-}
-.hover1:hover {
-  border-color: rgb(238, 187, 68) !important;
-}
-.hover2:hover {
-  border-color: rgb(240, 142, 53) !important;
-}
-.hover3:hover {
-  border-color: rgb(236, 81, 87) !important;
-}
-.hover4:hover {
-  border-color: rgb(221, 34, 204) !important;
-}
-.hover5:hover {
-  border-color: rgb(136, 51, 221) !important;
-}
-.hover1 a:not(.disabled):hover {
-  color: rgb(238, 187, 68) !important;
-}
-.hover2 a:not(.disabled):hover {
-  color: rgb(240, 142, 53) !important;
-}
-.hover3 a:not(.disabled):hover {
-  color: rgb(236, 81, 87) !important;
-}
-.hover4 a:not(.disabled):hover {
-  color: rgb(221, 34, 204) !important;
-}
-.hover5 a:not(.disabled):hover {
-  color: rgb(136, 51, 221) !important;
-}
-.hover1 button:hover {
-  background-color: rgb(238, 187, 68) !important;
-  color: white;
-}
-.hover2 button:hover {
-  background-color: rgb(240, 142, 53) !important;
-  color: white;
-}
-.hover3 button:hover {
-  background-color: rgb(236, 81, 87) !important;
-  color: white;
-}
-.hover4 button:hover {
-  background-color: rgb(221, 34, 204) !important;
-  color: white;
-}
-.hover5 button:hover {
-  background-color: rgb(136, 51, 221) !important;
-  color: white;
-}
-
-.hover1 .details,
-.hover1 img {
-  color: rgb(238, 187, 68);
-  border-color: rgb(238, 187, 68);
-}
-.hover2 .details,
-.hover2 img {
-  color: rgb(240, 142, 53);
-  border-color: rgb(240, 142, 53);
-}
-.hover3 .details,
-.hover3 img {
-  color: rgb(236, 81, 87);
-  border-color: rgb(236, 81, 87);
-}
-.hover4 .details,
-.hover4 img {
-  color: rgb(221, 34, 204);
-  border-color: rgb(221, 34, 204);
-}
-.hover5 .details,
-.hover5 img {
-  color: rgb(136, 51, 221);
-  border-color: rgb(136, 51, 221);
+.container .details,
+.container img {
+  color: var(--primary-color);
+  border-color: primary-color;
 }
 
 .details {
@@ -170,6 +99,14 @@
 
 .container:hover .actions {
   max-height: 35px;
+}
+
+.container .actions a:not(.disabled):hover {
+  color: var(--primary-color);
+}
+.container .actions button:hover {
+  background-color: var(--primary-color) !important;
+  color: white;
 }
 
 @media (max-width: 600px) {
