@@ -9,7 +9,7 @@ export default function Header({
   githubLink,
 }) {
   return (
-    <div className={styles.container + " " + styles["hover" + index]}>
+    <div className={styles.container + " " + styles["color" + index]}>
       <img src={img} alt={title} />
 
       <div className={styles.content}>

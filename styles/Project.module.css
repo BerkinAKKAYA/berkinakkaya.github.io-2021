@@ -1,16 +1,16 @@
-.hover1 {
+.color1 {
   --primary-color: rgb(238, 187, 68);
 }
-.hover2 {
+.color2 {
   --primary-color: rgb(240, 142, 53);
 }
-.hover3 {
+.color3 {
   --primary-color: rgb(236, 81, 87);
 }
-.hover4 {
+.color4 {
   --primary-color: rgb(221, 34, 204);
 }
-.hover5 {
+.color5 {
   --primary-color: rgb(136, 51, 221);
 }
 
@@ -32,18 +32,39 @@
   border-color: var(--primary-color);
 }
 
+.container:hover .content::before {
+    border-color: var(--primary-color);
+    border-style: solid;
+    height: 150px;
+}
+
 .container img {
-  width: 170px;
-  height: 150px;
+  width: 150px;
   margin: 15px 10px;
   margin-left: 20px;
   display: block;
-  border-right: 2px solid #ccc;
-  padding-right: 20px;
+  border-radius: 10px;
 }
 
 .content {
-  width: 100%;
+  position: relative;
+  padding-left: 20px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content::before {
+    content: "";
+    width: 0;
+    border: 1px dashed #eee;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    transition: all .3s ease;
 }
 
 .content h2,
@@ -119,6 +140,9 @@
     text-align: center;
     text-indent: 10px;
     padding-right: 25px;
+  }
+  .content::before {
+    display: none;
   }
   .container img {
     margin-left: 0;
