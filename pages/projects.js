@@ -62,7 +62,7 @@ export default function Projects() {
           title="Pomolog"
           description="Save how many pomodoros have you done, see monthly charts."
           img="/project-thumbnails/pomolog.jpg"
-          index="1"
+          index="5"
           liveLink="https://pomolog-berkinakkaya.web.app/"
           githubLink="https://github.com/BerkinAKKAYA/Pomolog"
         />
@@ -70,9 +70,17 @@ export default function Projects() {
           title="Focused YouTube"
           description="YouTube without distractions, with bookmarks."
           img="/project-thumbnails/focusedyt.png"
-          index="5"
-          liveLink="https://github.com/BerkinAKKAYA/Focused-YouTube"
-          githubLink="https://focused-yt.web.app/"
+          index="3"
+          liveLink="https://focused-yt.web.app/"
+          githubLink="https://github.com/BerkinAKKAYA/Focused-YouTube"
+        />
+        <Project
+          title="Weather Scraper"
+          description="Get monthly weather forecast via terminal."
+          img="/project-thumbnails/python.svg"
+          index="1"
+          liveLink=""
+          githubLink="https://github.com/BerkinAKKAYA/WeatherScraper"
         />
       </div>
     </>
