@@ -12,8 +12,6 @@ export default function Home() {
 				<link rel="icon" href="/github.svg" />
 			</Head>
 
-			<div>test</div>
-
 			<main className={styles.main}>
 				<h1 className={styles.title}>BERKIN AKKAYA</h1>
 				<p className={styles.description}>
